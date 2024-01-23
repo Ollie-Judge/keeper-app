@@ -1,10 +1,10 @@
 import "../style/note.css";
 
-function Note() {
+function Note(props) {
   return (
     <div id="noteContainer">
-      <h1>Title</h1>
-      <p>Content</p>
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
     </div>
   );
 }
